@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProblemCommunication xmlns="Operaize09V8.xsd">
+
+
+    <Request RequestID="RQ_1001" RequestTimeStamp="2020-09-15T07:00:00" PlanningHorizonFrom="2020-09-15T08:00:00" PlanningHorizonTo="2020-09-15T20:00:00" TimeUnit="Min" />
+
+
+    <CapacityRequirements>
+
+        <!-- IPA single bottle start -->
+
+        <CapacityRequirement>
+            <WorkOrder WorkOrderID="WO_FG1001_1" WorkOrderStatus="NN" LocationID="Plant1" OutputLocationStorageLocID="ST_FG1001_1" OutputMaterialID="FG1001" OutputMaterialQuantity="5" OutputMaterialUOM="EA" ProductionDueDate="2020-09-15T20:00:00" ProductionStartDate="2020-09-15T08:00:00" />
+            <routing RoutingID="RT_FG1001_1" RoutingText="NN" RoutingAlternativeID="1" />
+            <sequence sequenceID="NN" sequenceType="NN" />
+            <operation OperationID="1" EarliestStartDate="2020-09-15T08:00:00" OperationStartDate="2012-12-12T12:12:12" OperationEndDate="2012-12-12T12:12:12" LatestEndDate="2020-09-15T20:00:00" OperationText="Bottling" PredecessorOperation="NN" SucessorOperation="2" OperationType="NN" ResourceID="Plant1_BT" BOMAlternativeID="1" InputMaterialID="SFG1001" InputMaterialQuantity="0.505" InputMaterialUOM="L" InputMaterialStorageLocID="ST_SFG1001_1" ProductionTool="NN" CapacityID="Plant1_BT_2" ValueSetupUOM="Mins" ValueSetupTime="0.2" ValueProcessingUOM="Mins" ValueProcessingTime="0.8" ValueWaitUOM="Mins" ValueWaitTime="0.23" ValueMovementUOM="Mins" ValueMovementTime="0.22" />
+            <suboperation SubOperation="NN" SubOperationResource="NN" ProductionTool="NN" CapacityID="Plant1_BT_2" ValueSetupUOM="NN" ValueSetupTime="0" ValueProcessingUOM="NN" ValueProcessingTime="0" ValueWaitUOM="NN" ValueWaitTime="0" ValueMovementUOM="NN" ValueMovementTime="0" />
+        </CapacityRequirement>
+
+        <CapacityRequirement>
+            <WorkOrder WorkOrderID="WO_FG1001_1" WorkOrderStatus="NN" LocationID="Plant1" OutputLocationStorageLocID="ST_FG1001_1" OutputMaterialID="FG1001" OutputMaterialQuantity="5" OutputMaterialUOM="EA" ProductionDueDate="2020-09-15T20:00:00" ProductionStartDate="2020-09-15T08:00:00" />
+            <routing RoutingID="RT_FG1001_1" RoutingText="NN" RoutingAlternativeID="1" />
+            <sequence sequenceID="NN" sequenceType="NN" />
+            <operation OperationID="1" EarliestStartDate="2020-09-15T08:00:00" OperationStartDate="2012-12-12T12:12:12" OperationEndDate="2012-12-12T12:12:12" LatestEndDate="2020-09-15T20:00:00" OperationText="Bottling" PredecessorOperation="NN" SucessorOperation="2" OperationType="NN" ResourceID="Plant1_BT" BOMAlternativeID="1" InputMaterialID="PK1002" InputMaterialQuantity="1" InputMaterialUOM="EA" InputMaterialStorageLocID="ST_PK1002_1" ProductionTool="NN" CapacityID="Plant1_BT_2" ValueSetupUOM="Mins" ValueSetupTime="0.2" ValueProcessingUOM="Mins" ValueProcessingTime="0.8" ValueWaitUOM="Mins" ValueWaitTime="0.23" ValueMovementUOM="Mins" ValueMovementTime="0.22" />
+            <suboperation SubOperation="NN" SubOperationResource="NN" ProductionTool="NN" CapacityID="Plant1_BT_2" ValueSetupUOM="NN" ValueSetupTime="0" ValueProcessingUOM="NN" ValueProcessingTime="0" ValueWaitUOM="NN" ValueWaitTime="0" ValueMovementUOM="NN" ValueMovementTime="0" />
+        </CapacityRequirement>
+
+        <CapacityRequirement>
+            <WorkOrder WorkOrderID="WO_FG1001_1" WorkOrderStatus="NN" LocationID="Plant1" OutputLocationStorageLocID="ST_FG1001_1" OutputMaterialID="FG1001" OutputMaterialQuantity="5" OutputMaterialUOM="EA" ProductionDueDate="2020-09-15T20:00:00" ProductionStartDate="2020-09-15T08:00:00" />
+            <routing RoutingID="RT_FG1001_1" RoutingText="NN" RoutingAlternativeID="1" />
+            <sequence sequenceID="NN" sequenceType="NN" />
+            <operation OperationID="2" EarliestStartDate="2020-09-15T08:00:00" OperationStartDate="2012-12-12T12:12:12" OperationEndDate="2012-12-12T12:12:12" LatestEndDate="2020-09-15T20:00:00" OperationText="Stick Label" PredecessorOperation="1" SucessorOperation="NN" OperationType="NN" ResourceID="Plant1_LB" BOMAlternativeID="1" InputMaterialID="PK1005" InputMaterialQuantity="1" InputMaterialUOM="EA" InputMaterialStorageLocID="ST_PK1005_1" ProductionTool="NN" CapacityID="Plant1_LB_2" ValueSetupUOM="Mins" ValueSetupTime="0.13" ValueProcessingUOM="Mins" ValueProcessingTime="0.53" ValueWaitUOM="Mins" ValueWaitTime="0.15" ValueMovementUOM="Mins" ValueMovementTime="0.22" />
+            <suboperation SubOperation="NN" SubOperationResource="NN" ProductionTool="NN" CapacityID="Plant1_LB_2" ValueSetupUOM="NN" ValueSetupTime="0" ValueProcessingUOM="NN" ValueProcessingTime="0" ValueWaitUOM="NN" ValueWaitTime="0" ValueMovementUOM="NN" ValueMovementTime="0" />
+        </CapacityRequirement>
+
+        <!-- IPA single bottle end -->
+
+
+
+
+        <!-- IPA Six pack start -->
+        <CapacityRequirement>
+            <WorkOrder WorkOrderID="WO_FG1002_1" WorkOrderStatus="NN" LocationID="Plant1" OutputLocationStorageLocID="ST_FG1002_1" OutputMaterialID="FG1002" OutputMaterialQuantity="5" OutputMaterialUOM="EA" ProductionDueDate="2020-09-15T20:00:00" ProductionStartDate="2020-09-15T08:00:00" />
+            <routing RoutingID="RT_FG1002_1" RoutingText="NN" RoutingAlternativeID="1" />
+            <sequence sequenceID="NN" sequenceType="NN" />
+            <operation OperationID="1" EarliestStartDate="2020-09-15T08:00:00" OperationStartDate="2012-12-12T12:12:12" OperationEndDate="2012-12-12T12:12:12" LatestEndDate="2020-09-15T20:00:00" OperationText="Bottling" PredecessorOperation="NN" SucessorOperation="2" OperationType="NN" ResourceID="Plant1_BT" BOMAlternativeID="1" InputMaterialID="SFG1001" InputMaterialQuantity="2.005" InputMaterialUOM="L" InputMaterialStorageLocID="ST_SFG1001_1" ProductionTool="NN" CapacityID="Plant1_BT_1" ValueSetupUOM="Mins" ValueSetupTime="0.22" ValueProcessingUOM="Mins" ValueProcessingTime="0.63" ValueWaitUOM="Mins" ValueWaitTime="0.17" ValueMovementUOM="Mins" ValueMovementTime="0.22" />
+            <suboperation SubOperation="NN" SubOperationResource="NN" ProductionTool="NN" CapacityID="Plant1_BT_1" ValueSetupUOM="NN" ValueSetupTime="0" ValueProcessingUOM="NN" ValueProcessingTime="0" ValueWaitUOM="NN" ValueWaitTime="0" ValueMovementUOM="NN" ValueMovementTime="0" />
+        </CapacityRequirement>
+
+
+
+
+
+
+
+
+        <!-- IPA Six pack end -->
+
+    </CapacityRequirements>
+
+
+    <CapacityAvailabilities>
+        <!-- Machine availabilities to produce Beer -->
+        <CapacityAvailability>
+            <Resource LocationID="Plant1" LocationText="Fermentation and Packaging Plant" ResourceGroup="NN" ResourceId="Plant1_BT" ResourceText="Bottling Station (500ML)" />
+            <Capacity CapacityID="Plant1_BT_2" CapacityCategoryID="Machine" CapacityText="NN" CapacityUOM="Hrs" CapacityExclusivity="NN" FinitePlanningIndicator="NN" OverloadProfile="N" AvailabilityIntervalFrom="2020-09-15T08:00:00" AvailabilityIntervalTo="2020-09-15T20:00:00" CapacityAvailabilityInterval="12" />
+        </CapacityAvailability>
+        <CapacityAvailability>
+            <Resource LocationID="Plant1" LocationText="Fermentation and Packaging Plant" ResourceGroup="NN" ResourceId="Plant1_LB" ResourceText="Labelling Machine" />
+            <Capacity CapacityID="Plant1_LB_2" CapacityCategoryID="Machine" CapacityText="NN" CapacityUOM="Hrs" CapacityExclusivity="NN" FinitePlanningIndicator="NN" OverloadProfile="N" AvailabilityIntervalFrom="2020-09-15T08:00:00" AvailabilityIntervalTo="2020-09-15T20:00:00" CapacityAvailabilityInterval="12" />
+        </CapacityAvailability>
+    </CapacityAvailabilities>
+
+
+    <MaterialAvailabilities>
+        <!-- Material  availabilities to produce Beer -->
+        <MaterialAvailability LocationID="Plant1" StorageLOCID="ST_FG1001_1" MaterialID="FG_1001" MaterialText="IPA Beer Single Bottle 500ML" UOM="EA" BatchID="NN" UnrestrictedQuantity="1" InQualityInspection="NN" Blocked="NN" ExpiryDate="2025-01-01T00:00:00" />
+        <MaterialAvailability LocationID="Plant1" StorageLOCID="ST_SFG1001_1" MaterialID="SFG_1001" MaterialText="IPA Beer Warm Aged" UOM="L" BatchID="NN" UnrestrictedQuantity="50" InQualityInspection="NN" Blocked="NN" ExpiryDate="2025-01-01T00:00:00" />
+        <MaterialAvailability LocationID="Plant1" StorageLOCID="ST_PK1002_1" MaterialID="PK1002" MaterialText="Bottle (IPA 500ML)" UOM="EA" BatchID="NN" UnrestrictedQuantity="1000" InQualityInspection="NN" Blocked="NN" ExpiryDate="2025-01-01T00:00:00" />
+        <MaterialAvailability LocationID="Plant1" StorageLOCID="ST_PK1005_1" MaterialID="PK1005" MaterialText="Label (IPA 500ML)" UOM="EA" BatchID="NN" UnrestrictedQuantity="1000" InQualityInspection="NN" Blocked="NN" ExpiryDate="2025-01-01T00:00:00" />
+
+
+
+    </MaterialAvailabilities>
+
+
+    <POs>
+
+        <PO OrderID="PO_Plant1_SFG1001" LocationID="Plant1" StorageLocID="ST_SFG1001_1" MaterialID="str1234" MaterialQuantity="500" GRreceivingDate="2020-09-15T08:00:00" />
+
+
+    </POs>
+
+
+
+
+</ProblemCommunication>
